@@ -1,0 +1,403 @@
+/* @font-face {
+    font-family: "Post No Bills Jaffna";
+    src: url("../fonts/PostNoBillsJaffna-Bold.ttf") format("ttf")
+        local("Post No Bills Jaffna Bold");
+    font-style: normal;
+    font-weight: bold;
+} */
+
+/* reset */
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Top-line */
+
+.top-line {
+    /* position: absolute; */
+    width: 100%;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    color: #969696;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-line__left {
+    width: 355px;
+    height: 16px;
+    top: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-line__phone {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-line__right {
+    width: 137px;
+    top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-line__right-enter {
+    display: flex;
+    text-align: center;
+}
+
+.top-line__login-icon {
+    /* height: 14px; */
+    /* padding: 0.5rem; */
+}
+
+/* Second-line - nav */
+
+.second-line {
+    /* position: absolute; */
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.second-line__porten {
+    width: 104px;
+    height: 49px;
+    font-family: "Post No Bills Jaffna", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 0.5rem;
+}
+
+.second-line__menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #969696;
+    margin-left: auto;
+}
+
+.second-line__menu-item {
+    font-size: 14px;
+    padding: 0 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.second-line__menu_active {
+    color: white;
+}
+
+.second-line__burger {
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/* main */
+
+.intro {
+    max-width: 1920px;
+    width: 100%;
+    height: 810px;
+    padding-top: 160px;
+    background-image: url("../assets/Rectangle3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.intro-logo {
+    height: 320px;
+    width: 320px;
+    border: 4px solid white;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.intro-logo__name {
+    font-family: Post No Bills Jaffna;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+    color: white;
+    margin-top: 25%;
+}
+
+.intro-logo__line {
+    max-width: 179px;
+    margin: 0 auto;
+}
+
+.intro-logo__city {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.intro__subtext {
+    width: 730px;
+    height: 96px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.collections {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.season {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.season-watches {
+    width: 1040px;
+    height: 730px;
+}
+
+.season-watches__title {
+    width: 376px;
+    height: 39px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 93px 0;
+}
+
+.season-watches__line {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.season-watches__slider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0 0 80px;
+}
+
+.watch-card {
+    margin-right: 50px;
+}
+
+.watch-card__imageframe {
+    width: 260px;
+    height: 325px;
+    background: #191b1c;
+    padding-top: 55px;
+}
+
+.watch-card__image {
+    width: 215px;
+    height: 214px;
+    background-image: url("../assets/62050\ 1.png");
+    margin: 0 auto;
+}
+
+.watch-card__name {
+    width: 140px;
+    height: 24px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 25px 0 10px 0;
+}
+
+.watch-card__price {
+    width: 92px;
+    height: 21px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #d0d0d0;
+}
+
+.season-new {
+    width: 880px;
+    height: 730px;
+    background-image: url("../assets/Rectangle\ 8.png");
+    background-size: cover;
+    /* background-position: center center; */
+}
+
+.season-pic {
+    background-image: url("../assets/Rectangle\ 9.png");
+    width: 880px;
+    height: 600px;
+    background-size: auto;
+    background-position: center center;
+}
+
+.season-collection {
+    width: 880px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-collection__title {
+    width: 376px;
+    height: 39px;
+    font-family: Playfair Display;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.season-collection__line {
+    width: 120px;
+}
+
+.season-collection__text {
+    width: 471px;
+    height: 173px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    margin: 40px 0 73px 0;
+}
+
+.season-collection__button {
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.season-collection__button:hover {
+    cursor: pointer;
+}
+
+/* Adaptiveness */
+
+@media only screen and (min-width: 1500px) {
+    .second-line__burger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1499px) {
+    .second-line__burger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .second-line__burger {
+        display: none;
+    }
+    .collections .season {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-line__text {
+        display: none;
+    }
+    .second-line__burger {
+        display: flex;
+    }
+    .second-line__menu {
+        display: none;
+    }
+
+    .intro__subtext,
+    .season-collection__text {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .top-line {
+        display: none;
+    }
+    .intro__subtext,
+    .season-collection__text {
+        width: 85%;
+    }
+}
