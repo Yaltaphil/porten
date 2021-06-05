@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 1109px;
     margin: 0 auto;
     text-align: center;
 }
@@ -244,10 +244,11 @@ body {
     display: flex;
     flex-direction: row;
     padding: 50px 0 0 80px;
+    gap: 50px;
 }
 
 .watch-card {
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .watch-card__imageframe {
@@ -292,7 +293,42 @@ body {
     height: 730px;
     background-image: url("../assets/Rectangle\ 8.png");
     background-size: cover;
-    /* background-position: center center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-new__title {
+    width: 376px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 445px;
+    padding-bottom: 30px;
+}
+.season-new__line {
+    width: 120px;
+}
+
+.season-new__button {
+    background-color: black;
+    border: 1px solid white;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 10px 25px;
+}
+
+.season-new__button:hover {
+    cursor: pointer;
 }
 
 .season-pic {
@@ -332,7 +368,7 @@ body {
     font-size: 14px;
     line-height: 150%;
     text-align: center;
-    margin: 40px 0 73px 0;
+    margin: 40px 0 43px 0;
 }
 
 .season-collection__button {
@@ -344,11 +380,92 @@ body {
     background-color: black;
     border: 1px solid white;
     padding: 10px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .season-collection__button:hover {
     cursor: pointer;
+}
+
+.new-watches {
+    max-width: 1920px;
+    height: 1289px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-watches__title {
+    width: 448px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin: 120px 0 40px 0;
+}
+
+.new-watches__line {
+    width: 120px;
+    margin-bottom: 120px;
+}
+
+.watch-wrapper {
+    max-width: 1109px;
+    height: 1289px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    gap: 5px 0px;
+    margin: 60px auto;
+}
+
+.brends {
+    width: 1920px;
+    height: 362px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand__title {
+    width: 289px;
+    height: 48px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin: 60px 0 40px 0;
+}
+
+.brands__wrapper {
+    max-width: 1109px;
+    width: 100%;
+    height: 214px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.brand__card {
+    width: 255px;
+    height: 94px;
+    background: url("../assets/Rectangle\ 12.png");
+}
+
+.line {
+    width: 120px;
 }
 
 /* Adaptiveness */
