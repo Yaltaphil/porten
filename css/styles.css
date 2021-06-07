@@ -257,10 +257,6 @@ body {
     gap: 50px;
 }
 
-.watch-card {
-    /* margin-right: 50px; */
-}
-
 .watch-card__imageframe {
     width: 260px;
     height: 325px;
@@ -373,7 +369,7 @@ body {
 }
 
 .season-collection__text {
-    width: 471px;
+    max-width: 471px;
     height: 173px;
     font-size: 14px;
     line-height: 150%;
@@ -438,7 +434,6 @@ body {
 
 .brands {
     max-width: 1920px;
-    /* width: 100%; */
     min-height: 362px;
     display: flex;
     flex-direction: column;
@@ -608,7 +603,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1499px) {
+@media only screen and (min-width: 1109px) and (max-width: 1499px) {
     .second-line__burger {
         display: none;
     }
@@ -619,18 +614,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1109px) {
-    .second-line__burger {
-        display: none;
-    }
-    .collections,
-    .season {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1108px) {
     .top-line__text {
         display: none;
     }
@@ -645,17 +629,35 @@ body {
     .season-collection__text {
         width: 70%;
     }
+    .collections,
+    .season {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
-@media only screen and (max-width: 360px) {
-    .top-line {
+@media only screen and (max-width: 767px) {
+    .top-line,
+    .second-line__menu {
         display: none;
+    }
+    .second-line__burger {
+        display: flex;
     }
     .intro__subtext,
     .season-collection__text {
-        width: 90%;
+        width: 80%;
     }
     .new-watches__title {
         font-size: 1.5rem;
+    }
+    .footer-block-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .collections,
+    .season {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
