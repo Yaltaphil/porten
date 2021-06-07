@@ -1,10 +1,26 @@
-/* @font-face {
-    font-family: "Post No Bills Jaffna";
-    src: url("../fonts/PostNoBillsJaffna-Bold.ttf") format("ttf")
-        local("Post No Bills Jaffna Bold");
+@font-face {
+    font-family: "Post No Bills Jaffna Bold";
+    src: url("../fonts/Post\ No\ Bills\ Jaffna\ Bold\ 700.ttf")
+        format("truetype") local("Post No Bills Jaffna Bold");
     font-style: normal;
     font-weight: bold;
-} */
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/PlayfairDisplay-Regular_a014ae186842fd4633049a87184a7a9f.ttf")
+        format("truetype") local("Playfair Display");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("../fonts/Playfair\ Display\ Bold\ 700.ttf") format("truetype")
+        local("Playfair Display Bold");
+    font-style: normal;
+    font-weight: bold;
+}
 
 /* reset */
 
@@ -156,13 +172,12 @@ body {
 }
 
 .intro-logo__name {
-    font-family: Post No Bills Jaffna;
+    font-family: "Post No Bills Jaffna", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 96px;
     text-align: center;
-    color: white;
     margin-top: 25%;
 }
 
@@ -179,7 +194,6 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
 }
 
 .intro__subtext {
@@ -189,7 +203,6 @@ body {
     line-height: 150%;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
     padding-top: 80px;
     margin: 0 auto;
 }
@@ -305,7 +318,6 @@ body {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    color: #ffffff;
     padding-top: 445px;
     padding-bottom: 30px;
 }
@@ -349,7 +361,7 @@ body {
 .season-collection__title {
     width: 376px;
     height: 39px;
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 36px;
     line-height: 48px;
     text-align: center;
@@ -402,7 +414,6 @@ body {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    color: #ffffff;
     margin: 120px 0 40px 0;
 }
 
@@ -439,13 +450,12 @@ body {
 .brand__title {
     width: 289px;
     height: 48px;
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    color: #ffffff;
     margin: 60px 0 40px 0;
 }
 
@@ -501,7 +511,6 @@ body {
     font-size: 24px;
     line-height: 32px;
     text-transform: uppercase;
-    color: #ffffff;
 }
 
 .footer-block__text {
@@ -511,7 +520,6 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #ffffff;
 }
 
 .footer-block__tags-area {
@@ -538,20 +546,12 @@ body {
     cursor: pointer;
 }
 
-/* .footer-block__span {
-    margin-top: 37px;
-    width: 100%;
-} */
 .footer-block__input {
     width: 204px;
     height: 42px;
     background: rgba(255, 255, 255, 0.6);
     border: none;
-    color: white;
     padding-left: 1rem;
-}
-.footer-block__input::placeholder {
-
 }
 
 .footer-block__button {
@@ -562,10 +562,14 @@ body {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #ffffff;
-    background: #000;
     padding: 10px 20px;
     border: none;
+    background: #000;
+    color: white;
+}
+
+.footer-block__button:hover {
+    cursor: pointer;
 }
 
 .last__line {
