@@ -430,7 +430,7 @@ body {
 
 .new-watches {
     max-width: 1920px;
-    min-height: 1289px;
+    /* min-height: 1289px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
