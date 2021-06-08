@@ -31,13 +31,3 @@ const swiper2 = new Swiper(".mySwiper2", {
         delay: 6000,
     },
 });
-
-
-// const swiper3 = new Swiper(".mySwiper3", {
-//     slidesPerView: 2,
-//     centeredSlides: true,
-//     loop: true,
-//     autoplay: {
-//         delay: 3000,
-//     },
-// });

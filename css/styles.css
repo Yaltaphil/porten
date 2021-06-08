@@ -157,10 +157,12 @@ body {
     text-align: center;
     z-index: 2;
     transition: 0.25s ease;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
 }
 
 .burger-menu li {
-    font-size: 36px;
+    font-size: 3rem;
     margin: 10px 0px;
 }
 
@@ -178,8 +180,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(39, 39, 39, 0.95);
-    transition: 0.25s ease;
+    background: rgba(32, 32, 32, 0.926);
 }
 
 .hide {
@@ -696,4 +697,3 @@ body {
         justify-content: flex-start;
     }
 }
-
