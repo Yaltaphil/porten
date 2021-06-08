@@ -13,3 +13,21 @@ closeburger.addEventListener("click", () => {
     burgermenu.classList.remove("show");
     burgermenu.classList.add("hide");
 });
+
+const swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
+
+const swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 6000,
+    },
+});
