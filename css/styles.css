@@ -674,6 +674,9 @@ body {
         /* justify-content: space-evenly; */
         padding: 80px 10px;
     }
+    .footer-block__tags-area {
+        gap: 15px 20px;
+    }
     .last__line {
         padding: 0 25px;
     }
