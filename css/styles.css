@@ -1,27 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
 @font-face {
-    font-family: "Post No Bills Jaffna Bold";
-    src: url("../fonts/Post\ No\ Bills\ Jaffna\ Bold\ 700.ttf")
-        format("truetype") local("Post No Bills Jaffna Bold");
-    font-style: normal;
+    font-family: "Post No Bills Jaffna";
+    src: url("../fonts/PostNoBillsJaffna-Bold.eot");
+    src: local("☺"), url("../fonts/PostNoBillsJaffna-Bold.woff") format("woff"),
+        url("../fonts/PostNoBillsJaffna-Bold.ttf") format("truetype"),
+        url("../fonts/PostNoBillsJaffna-Bold.svg") format("svg");
     font-weight: bold;
-}
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("../fonts/PlayfairDisplay-Regular_a014ae186842fd4633049a87184a7a9f.ttf")
-        format("truetype") local("Playfair Display");
     font-style: normal;
-    font-weight: normal;
 }
-
-@font-face {
-    font-family: "Playfair Display Bold";
-    src: url("../fonts/Playfair\ Display\ Bold\ 700.ttf") format("truetype")
-        local("Playfair Display Bold");
-    font-style: normal;
-    font-weight: bold;
-}
-
 /* reset */
 
 body {
@@ -208,8 +196,7 @@ body {
 }
 
 .intro-logo__name {
-    font-family: Post No Bills Jaffna;
-    font-style: normal;
+    font-family: "Post No Bills Jaffna";
     font-weight: bold;
     font-size: 64px;
     line-height: 96px;
@@ -223,7 +210,7 @@ body {
 }
 
 .intro-logo__city {
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -268,7 +255,7 @@ body {
 .season-watches__title {
     width: 376px;
     height: 39px;
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -310,8 +297,7 @@ body {
 .watch-card__name {
     width: 90%;
     height: 24px;
-    font-family: Playfair Display;
-    font-style: normal;
+    font-family: "Playfair Display";
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -322,8 +308,7 @@ body {
 .watch-card__price {
     width: 92px;
     height: 21px;
-    font-family: Playfair Display;
-    font-style: normal;
+    font-family: "Playfair Display";
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -344,8 +329,7 @@ body {
 
 .season-new__title {
     width: 376px;
-    font-family: Playfair Display;
-    font-style: normal;
+    font-family: "Playfair Display";
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
@@ -440,8 +424,7 @@ body {
 
 .new-watches__title {
     width: 448px;
-    font-family: Playfair Display;
-    font-style: normal;
+    font-family: "Playfair Display";
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
@@ -482,7 +465,6 @@ body {
     width: 289px;
     height: 48px;
     font-family: "Playfair Display";
-    font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
@@ -536,7 +518,7 @@ body {
 }
 
 .footer-block__title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -546,7 +528,7 @@ body {
 
 .footer-block__text {
     margin: 40px 0;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -563,7 +545,7 @@ body {
 
 .footer-block__tag {
     padding: 10px 20px;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -587,8 +569,7 @@ body {
 
 .footer-block__button {
     width: 139px;
-    font-family: PT Sans;
-    font-style: normal;
+    font-family: "PT Sans", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -608,8 +589,7 @@ body {
     max-width: 1109px;
     height: 50px;
     background: #0f0f0f;
-    font-family: PT Sans;
-    font-style: normal;
+    font-family: "PT Sans", sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
@@ -621,8 +601,7 @@ body {
 
 .last__line a {
     cursor: pointer;
-    font-family: PT Sans;
-    font-style: normal;
+    font-family: "PT Sans", sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
@@ -695,5 +674,8 @@ body {
     .season {
         flex-direction: column;
         justify-content: flex-start;
+    }
+    .last__line {
+        padding: 0 20px;
     }
 }
