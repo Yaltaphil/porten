@@ -525,7 +525,7 @@ body {
 .footer-block {
     background: none;
     height: 253px;
-    max-width: 350px;
+    width: 350px;
 }
 
 .footer-block__title {
@@ -671,7 +671,7 @@ body {
         flex-direction: column-reverse;
     }
     .footer-block-wrapper {
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         padding: 80px 10px;
     }
     .last__line {
