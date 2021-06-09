@@ -17,6 +17,7 @@ closeburger.addEventListener("click", () => {
 const swiper1 = new Swiper(".mySwiper1", {
     slidesPerView: 3,
     centeredSlides: true,
+    spaceBetween: 50,
     loop: true,
     autoplay: {
         delay: 4000,
