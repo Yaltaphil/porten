@@ -278,7 +278,7 @@ body {
 }
 
 .season-watches__slider {
-    width: 85%;
+    width: 100%;
     /* display: flex; */
     /* flex-direction: row; */
     /* margin: 50px 50px 0 50px; */
@@ -469,6 +469,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background: #0f0f0f;
 }
 
 .brand__title {
@@ -524,7 +525,7 @@ body {
 .footer-block {
     background: none;
     height: 253px;
-    width: 350px;
+    max-width: 350px;
 }
 
 .footer-block__title {
@@ -539,7 +540,6 @@ body {
 .footer-block__text {
     margin: 40px 0;
     font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -594,6 +594,11 @@ body {
     cursor: pointer;
 }
 
+.lastdiv {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #0f0f0f;
+}
 .last__line {
     margin: 0 auto;
     max-width: 1109px;
@@ -664,6 +669,10 @@ body {
     }
     .season2018 {
         flex-direction: column-reverse;
+    }
+    .footer-block-wrapper {
+        justify-content: space-evenly;
+        padding: 80px 10px;
     }
     .last__line {
         padding: 0 25px;

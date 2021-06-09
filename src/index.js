@@ -20,7 +20,7 @@ const swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 50,
     loop: true,
     autoplay: {
-        delay: 4000,
+        delay: 3000,
     },
 });
 
@@ -29,6 +29,6 @@ const swiper2 = new Swiper(".mySwiper2", {
     centeredSlides: true,
     loop: true,
     autoplay: {
-        delay: 6000,
+        delay: 5000,
     },
 });
