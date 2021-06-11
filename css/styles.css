@@ -19,15 +19,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    width: 100%;
-    min-width: 320px;
-    scroll-behavior: smooth;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    /* min-width: 400px; */
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -36,7 +28,11 @@ body {
 .wrapper {
     max-width: 1109px;
     margin: 0 auto;
-    text-align: center;
+}
+
+.big-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 /* Top-line */
@@ -101,7 +97,7 @@ body {
 .second-line__porten {
     width: 104px;
     height: 49px;
-    font-family: Post No Bills Jaffna;
+    font-family: "Post No Bills Jaffna";
     color: white;
     font-style: normal;
     font-weight: bold;
@@ -190,6 +186,7 @@ body {
     background-image: url("../assets/Rectangle3.png");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
 }
 
@@ -236,25 +233,15 @@ body {
     margin: 0 auto;
 }
 
-.collections {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .season {
-    max-width: 1920px;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 .season-watches {
-    width: 1040px;
+    max-width: 1040px;
     height: 730px;
 }
 
@@ -278,16 +265,14 @@ body {
 }
 
 .season-watches__slider {
-    width: 100%;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* margin: 50px 50px 0 50px; */
-    /* gap: 50px; */
     padding: 50px;
+    margin: 0 auto;
 }
 
 .watch-card {
-    /* margin-right: 50px; */
+    margin: 0 auto;
+    height: 460px;
+    width: 260px;
 }
 
 .watch-card__imageframe {
@@ -301,6 +286,8 @@ body {
     width: 215px;
     height: 214px;
     background-image: url("../assets/62050\ 1.png");
+    background-position: center center;
+    background-size: cover;
     margin: 0 auto;
 }
 
@@ -327,10 +314,12 @@ body {
 }
 
 .season-new {
-    width: 880px;
+    width: 100%;
     height: 730px;
     background-image: url("../assets/Rectangle\ 8.png");
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,19 +358,21 @@ body {
 
 .season-pic {
     background-image: url("../assets/Rectangle\ 9.png");
-    width: 880px;
+    min-width: 880px;
     height: 600px;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
 }
 
 .season-collection {
-    width: 880px;
-    height: 600px;
+    max-width: 880px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .season-collection__title {
@@ -391,7 +382,7 @@ body {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 0 40px 0;
 }
 
 .season-collection__line {
@@ -400,11 +391,11 @@ body {
 
 .season-collection__text {
     max-width: 471px;
-    height: 173px;
+    min-height: 173px;
     font-size: 14px;
     line-height: 150%;
     text-align: center;
-    margin: 40px 0 43px 0;
+    padding: 40px 0 43px 0;
 }
 
 .season-collection__button {
@@ -444,21 +435,11 @@ body {
 
 .new-watches__line {
     width: 120px;
-    margin-bottom: 120px;
 }
 
 .watch-wrapper {
     max-width: 1109px;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    column-gap: 5px;
-    row-gap: 20px;
-    margin: 60px auto;
+    padding: 30px;
 }
 
 .brands {
@@ -485,8 +466,6 @@ body {
 
 .brands__wrapper {
     max-width: 1109px;
-    /* width: 100%; */
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -569,8 +548,11 @@ body {
     cursor: pointer;
 }
 
+.footer-inputblock {
+    display: flex;
+}
 .footer-block__input {
-    width: 204px;
+    width: 196px;
     height: 42px;
     background: rgba(255, 255, 255, 0.6);
     border: none;
@@ -578,13 +560,13 @@ body {
 }
 
 .footer-block__button {
-    width: 139px;
+    width: 138px;
     font-family: "PT Sans", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     background: #000;
     color: white;
@@ -637,13 +619,17 @@ body {
     .second-line__burger {
         display: none;
     }
-    .collections,
     .season {
         flex-direction: column;
-        justify-content: flex-start;
     }
     .season2018 {
         flex-direction: column-reverse;
+    }
+    .season-pic {
+        width: 100%;
+    }
+    .footer-block-wrapper {
+        padding: 80px 10px;
     }
 }
 
@@ -658,25 +644,27 @@ body {
         display: none;
     }
 
-    .intro__subtext,
-    .season-collection__text {
+    .intro__subtext {
         width: 70%;
     }
-    .collections,
     .season {
         flex-direction: column;
-        justify-content: flex-start;
     }
     .season2018 {
         flex-direction: column-reverse;
     }
+    .season-pic {
+        width: 100%;
+    }
+
+    .brands__wrapper {
+        max-width: 750px;
+    }
+
     .footer-block-wrapper {
-        /* justify-content: space-evenly; */
         padding: 80px 10px;
     }
-    .footer-block__tags-area {
-        gap: 15px 20px;
-    }
+
     .last__line {
         padding: 0 25px;
     }
@@ -690,24 +678,30 @@ body {
     .second-line__burger {
         display: flex;
     }
+
     .intro__subtext,
     .season-collection__text {
         width: 80%;
     }
-    .new-watches__title {
+
+    .season {
+        flex-direction: column;
+    }
+    .season2018 {
+        flex-direction: column-reverse;
+    }
+    .season-pic {
+        width: 100%;
+    }
+    .season-new__title,
+    .season-collection__title,
+    .new-watches__title,
+    .brand__title {
         font-size: 1.5rem;
     }
     .footer-block-wrapper {
         flex-direction: column;
         align-items: center;
-    }
-    .collections,
-    .season {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .season2018 {
-        flex-direction: column-reverse;
     }
     .last__line {
         padding: 0 40px;
