@@ -318,7 +318,7 @@ body {
     height: 730px;
     background-image: url("../assets/Rectangle\ 8.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -484,7 +484,6 @@ body {
 
 .footer {
     max-width: 1920px;
-    width: 100%;
     min-height: 400px;
     background: url("../assets/Rectangle\ 15.png");
     background-position: center center;
@@ -503,7 +502,7 @@ body {
 
 .footer-block {
     background: none;
-    height: 253px;
+    min-height: 253px;
     width: 350px;
 }
 
