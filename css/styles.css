@@ -148,7 +148,7 @@ body {
 
 .burger-menu li {
     margin: 10px 0px;
-    line-height: 48px;
+    line-height: 36px;
 }
 
 .burger-menu li a {
@@ -637,9 +637,6 @@ body {
         display: none;
     }
     .second-line__burger {
-        display: flex;
-    }
-    .second-line__menu {
         display: none;
     }
 
