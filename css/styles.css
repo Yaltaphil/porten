@@ -277,17 +277,17 @@ body {
 
 .watch-card__imageframe {
     width: 260px;
-    height: 325px;
+    /* height: 325px; */
     background: #191b1c;
-    padding-top: 55px;
+    padding: 55px 0;
 }
 
 .watch-card__image {
     width: 215px;
     height: 214px;
     background-image: url("../assets/62050\ 1.png");
-    background-position: center center;
-    background-size: cover;
+    /* background-position: top left; */
+    background-size: contain;
     margin: 0 auto;
 }
 

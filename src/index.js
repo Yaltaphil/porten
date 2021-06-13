@@ -55,11 +55,11 @@ const swiper2 = new Swiper(".mySwiper2", {
         },
         1499: {
             allowTouchMove: true,
-            spaceBetween: 30,
-            slidesPerView: 3,
+            spaceBetween: 23,
+            slidesPerView: 4,
         },
     },
-    centeredSlides: true,
+    // centeredSlides: true,
     loop: true,
     autoplay: {
         delay: 5000,
