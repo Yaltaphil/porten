@@ -18,25 +18,30 @@ closeburger.addEventListener("click", () => {
 });
 
 const swiper1 = new Swiper(".mySwiper1", {
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 2500,
     },
 
     breakpoints: {
-        767: {
+        376: {
             slidesPerView: 1,
             allowTouchMove: true,
         },
-        1108: {
+        767: {
+            slidesPerView: 3,
+            // spaceBetween: 60,
             allowTouchMove: true,
-            spaceBetween: 10,
+        },
+        1109: {
+            allowTouchMove: true,
+            // spaceBetween: 10,
             slidesPerView: 3,
         },
-        1499: {
+        1500: {
             allowTouchMove: true,
-            spaceBetween: 50,
+            // spaceBetween: 23,
             slidesPerView: 3,
         },
     },
@@ -44,24 +49,34 @@ const swiper1 = new Swiper(".mySwiper1", {
 
 const swiper2 = new Swiper(".mySwiper2", {
     breakpoints: {
-        767: {
+        376: {
             slidesPerView: 1,
+            slidesPerColumn: 1,
             allowTouchMove: true,
         },
-        1108: {
-            allowTouchMove: true,
-            spaceBetween: 10,
+        767: {
             slidesPerView: 3,
-        },
-        1499: {
+            slidesPerColumn: 1,
+            // spaceBetween: 10,
             allowTouchMove: true,
-            spaceBetween: 23,
+        },
+        1109: {
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            // spaceBetween: 10,
+            allowTouchMove: true,
+        },
+        1500: {
+            // spaceBetween: 23,
             slidesPerView: 4,
+            slidesPerColumn: 2,
         },
     },
-    // centeredSlides: true,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-    },
+    resizeReInit: true,
 });
+
+// reinit swiper on window resising
+// window.addEventListener("resize", () => {
+//     console.log("reinit swiper!");
+//     if (window.innerWidth >= 1500) swiper2.update();
+// });

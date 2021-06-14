@@ -111,9 +111,10 @@ body {
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     color: #969696;
     margin-left: auto;
+    padding-right: 10px;
     z-index: 2;
 }
 
@@ -264,7 +265,7 @@ body {
 }
 
 .season-watches__slider {
-    padding: 50px;
+    padding-top: 50px;
     margin: 0 auto;
 }
 
@@ -275,7 +276,7 @@ body {
 }
 
 .watch-card__imageframe {
-    width: 260px;
+    width: 100%;
     /* height: 325px; */
     background: #191b1c;
     padding: 55px 0;
@@ -416,7 +417,7 @@ body {
 
 .new-watches {
     max-width: 1920px;
-    /* min-height: 1289px; */
+    max-height: 1289px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -439,7 +440,8 @@ body {
 
 .watch-wrapper {
     max-width: 1109px;
-    padding: 30px;
+    max-height: 1040px;
+    margin: 50px 0 0 0;
 }
 
 .brands {
@@ -447,7 +449,7 @@ body {
     min-height: 362px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     background: #0f0f0f;
@@ -468,14 +470,15 @@ body {
     max-width: 1109px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 25px;
 }
 .brand__card {
     width: 255px;
     height: 94px;
-    background: url("../assets/Rectangle\ 12.png");
+    /* background: url("../assets/Rectangle\ 12.png"); */
 }
 
 .line {
@@ -487,6 +490,8 @@ body {
     min-height: 400px;
     background: url("../assets/Rectangle\ 15.png");
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
 }
 
@@ -557,6 +562,9 @@ body {
     border: none;
     padding-left: 1rem;
 }
+.footer-block__input {
+    outline: 0;
+}
 
 .footer-block__button {
     width: 138px;
@@ -612,9 +620,21 @@ body {
     .second-line__burger {
         display: none;
     }
+    .watch-wrapper .swiper-wrapper {
+        width: 1109px;
+        height: 1040px;
+    }
+    .watch-wrapper .swiper-slide {
+        height: calc((100% - 30px) / 2);
+    }
 }
 
 @media only screen and (min-width: 1109px) and (max-width: 1499px) {
+    .watch-wrapper .swiper-wrapper {
+        width: 1040px;
+        /* height: 1040px; */
+    }
+
     .second-line__burger {
         display: none;
     }
@@ -694,6 +714,10 @@ body {
     .new-watches__title,
     .brand__title {
         font-size: 1.5rem;
+    }
+    .brands__wrapper {
+        max-width: 520px;
+        flex-direction: column;
     }
     .footer-block-wrapper {
         flex-direction: column;
