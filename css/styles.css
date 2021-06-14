@@ -177,8 +177,6 @@ body {
     display: none;
 }
 
-/* main */
-
 .intro {
     max-width: 1920px;
     height: 810px;
@@ -439,7 +437,7 @@ body {
 }
 
 .watch-wrapper {
-    max-width: 1109px;
+    width: 1109px;
     max-height: 1040px;
     margin: 50px 0 0 0;
 }
@@ -630,9 +628,12 @@ body {
 }
 
 @media only screen and (min-width: 1109px) and (max-width: 1499px) {
-    .watch-wrapper .swiper-wrapper {
+    .watch-wrapper {
         width: 1040px;
-        /* height: 1040px; */
+    }
+
+    .watch-wrapper .swiper-slide {
+        height: 100%;
     }
 
     .second-line__burger {
@@ -653,6 +654,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1108px) {
+    .watch-wrapper {
+        width: 1040px;
+    }
     .top-line__text {
         display: none;
     }
