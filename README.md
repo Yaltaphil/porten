@@ -1,5 +1,6 @@
-# porten
-##Learning project with Avada Media
+# PORTEN
+
+## Learning project with Avada Media
 
 Coding site layout based on Figma's mockup.
 
