@@ -726,6 +726,10 @@ button:hover {
         margin: 40px 0 20px 0;
     }
 
+    .season-collection__title {
+        padding: 60px 0 0 0;
+    }
+
     .season-collection__text {
         padding: 20px 0 30px 0;
     }

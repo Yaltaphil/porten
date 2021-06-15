@@ -20,31 +20,24 @@ closeburger.addEventListener("click", () => {
 const swiper1 = new Swiper(".mySwiper1", {
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3500,
     },
+    allowTouchMove: true,
 
     breakpoints: {
         376: {
             slidesPerView: 1,
-            allowTouchMove: true,
         },
         767: {
             slidesPerView: 3,
-            // spaceBetween: 60,
-            allowTouchMove: true,
         },
         1109: {
-            allowTouchMove: true,
-            // spaceBetween: 10,
             slidesPerView: 3,
         },
         1500: {
-            allowTouchMove: true,
-            // spaceBetween: 23,
             slidesPerView: 3,
         },
     },
-
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
@@ -52,26 +45,21 @@ const swiper2 = new Swiper(".mySwiper2", {
         376: {
             slidesPerView: 1,
             slidesPerColumn: 1,
-            allowTouchMove: true,
         },
         767: {
             slidesPerView: 3,
             slidesPerColumn: 1,
-            // spaceBetween: 10,
-            allowTouchMove: true,
         },
         1109: {
             slidesPerView: 3,
             slidesPerColumn: 1,
-            // spaceBetween: 10,
-            allowTouchMove: true,
         },
         1500: {
-            // spaceBetween: 23,
             slidesPerView: 4,
             slidesPerColumn: 2,
         },
     },
+    allowTouchMove: true,
     resizeReInit: true,
     watchOverflow: true,
 });
