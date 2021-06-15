@@ -18,7 +18,6 @@ closeburger.addEventListener("click", () => {
 });
 
 const swiper1 = new Swiper(".mySwiper1", {
-    centeredSlides: false,
     loop: true,
     autoplay: {
         delay: 2500,
@@ -45,6 +44,7 @@ const swiper1 = new Swiper(".mySwiper1", {
             slidesPerView: 3,
         },
     },
+
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
@@ -73,10 +73,14 @@ const swiper2 = new Swiper(".mySwiper2", {
         },
     },
     resizeReInit: true,
+    watchOverflow: true,
 });
 
 // reinit swiper on window resising
 // window.addEventListener("resize", () => {
 //     console.log("reinit swiper!");
-//     if (window.innerWidth >= 1500) swiper2.update();
+//     if (window.innerWidth >= 1500) {
+//         swiper2.update();
+//         swiper2.destroy();
+//     }
 // });

@@ -25,6 +25,12 @@ body {
     font-weight: normal;
 }
 
+button:hover {
+    background: rgba(226, 221, 221, 0.2);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
 .wrapper {
     max-width: 1109px;
     margin: 0 auto;
@@ -100,7 +106,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
-    padding-left: 0.5rem;
+    padding-left: 10px;
 }
 
 .second-line__menu {
@@ -336,7 +342,7 @@ body {
 }
 
 .season-new__button {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
     font-size: 18px;
     line-height: 23px;
@@ -619,11 +625,15 @@ body {
     .watch-wrapper .swiper-slide {
         height: calc((100% - 30px) / 2);
     }
+    .season-watches__slider {
+        padding: 50px 80px 0 80px;
+    }
 }
 
 @media only screen and (min-width: 1109px) and (max-width: 1499px) {
-    .watch-wrapper {
-        width: 1040px;
+    .watch-wrapper,
+    .season-watches__slider {
+        width: 880px;
     }
 
     .watch-wrapper .swiper-slide {
@@ -648,8 +658,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1108px) {
-    .watch-wrapper {
-        width: 1040px;
+    .watch-wrapper,
+    .season-watches__slider {
+        width: 880px;
     }
     .top-line__text {
         display: none;
@@ -712,6 +723,7 @@ body {
     .new-watches__title,
     .brand__title {
         font-size: 1.5rem;
+        margin: 40px 0 20px 0;
     }
 
     .season-collection__text {
@@ -720,6 +732,7 @@ body {
     .brands__wrapper {
         max-width: 520px;
         flex-direction: column;
+        padding: 0 0 20px 0;
     }
     .footer-block-wrapper {
         flex-direction: column;
@@ -727,5 +740,8 @@ body {
     }
     .last__line {
         padding: 0 40px;
+    }
+    .second-line__porten {
+        padding-left: 30px;
     }
 }
