@@ -244,6 +244,7 @@ button:hover {
 .season-watches {
     max-width: 1040px;
     height: 730px;
+    overflow: hidden;
 }
 
 .season-watches__title {
@@ -421,6 +422,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .new-watches__title {

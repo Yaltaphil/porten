@@ -59,6 +59,7 @@ const swiper2 = new Swiper(".mySwiper2", {
             slidesPerColumn: 2,
         },
     },
+    loop: false,
     allowTouchMove: true,
     resizeReInit: true,
     watchOverflow: true,
